@@ -1,0 +1,31 @@
+<!-- Formulários -->
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+ </head>
+ <body>
+    <form name="signup" method="post" action="#" autocomplete="on" onsubmit="alert"> 
+        <!-- método GET os dados vão pela URL || autocomplete = autocompleta o form caso sai ada pag-|| on submit são eventos ao clicar no botão (js)-->
+        Nome: <input type="text" name="name"/> <br>
+        Idade: <input type="text" name="age"/> <br>
+        Senha: <input type="text" name="password"/> <br>
+        <button type="submit">Enviar</button>
+    </form>
+
+    <!-- INPUT -->
+    <form>
+        <label>Digite aqui:</label> <input type="text"/> <br/>
+        <label>Numero:</label> <input type="number" min="0" step="5" max="99"/> <br/>
+        <label>Botão:</label> <input type="button" value="Enviar"/> <button> Enviar</button> <br/>
+        <label>Range:</label> <input type="range" min="0" max="100"/> <br/>
+        <label>Cor:</label> <input type="color"> <br/>
+        <label>E-mail:</label> <input type="email"> <br/>
+        <label>URL:</label> <input type="date"> <br/>
+        <label>Date:</label> <input type="url"> <br/>
+        <label>Semana:</label> <input type="week"> <br/>            
+    </form>
+ </body>
+ </html>
