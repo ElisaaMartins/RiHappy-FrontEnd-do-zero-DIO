@@ -30,7 +30,9 @@ function countDown () {
 }
 
 function playSound() {
-    let audio = new Audio ()
+    let audio = new Audio("./src/audios/som.m4a");
+    audio.volume = 0.2;
+    audio.play();
 }
 
 function randomSquare (){
@@ -56,17 +58,19 @@ function randomSquare (){
     state.values.timerId = setInterval(randomSquare, state.values.gameVelocity);
 }
  */
+
 /* função que vai ficar ouvindo para fazer uma ação */
 /* se o quadrado clicado for o quadrado que o inimigo estiver aumenta 1 no score */
 function addListenerHitBox(){
     state.view.squares.forEach((square) => {
         square.addEventListener("mousedown", () => {
-            if(square.id == state.values.hitPosition){
+            if(square.id === state.values.hitPosition){
                 state.values.result++;
                 state.view.score.textContent = state.values.result;
                 state.values.hitPosition = null;
+                playSound();
             }
-        })
+        });
     });
 }
 
