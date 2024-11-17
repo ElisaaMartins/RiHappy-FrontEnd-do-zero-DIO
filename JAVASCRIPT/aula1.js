@@ -1,3 +1,5 @@
+/* VARIAVEIS, OPERADORES E CONDICIONAIS */
+
 /* declarando variaveis */
 let variavel = 10;
 variavel = 20;
