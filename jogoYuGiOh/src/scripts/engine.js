@@ -83,7 +83,7 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   
     async function checkDuelResults(playerCardId, computerCardId) {
-      let duelResults = "Empate";
+      let duelResults = "DRAW";
       const playerCard = cardData[playerCardId];
   
       if (playerCard.WinOf.includes(computerCardId)) {
@@ -164,6 +164,9 @@ document.addEventListener("DOMContentLoaded", () => {
     function init() {
       drawCards(5, state.playerSides.player1);
       drawCards(5, state.playerSides.computer);
+
+      const bgm = document.getElementById("bgm");
+      bgm.play();
     }
   
     init();
